@@ -11,13 +11,13 @@ int main(int argc, char *argv[])
 
     int firstNum{}, secondNum{}, thirdNum{};
 
-    std::cout << "Ââåäèòå ïåðâîå ÷èñëî: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿ÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
     std::cin >> firstNum;
 
-    std::cout << "Ââåäèòå âòîðîå ÷èñëî: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
     std::cin >> secondNum;
 
-    std::cout << "Ââåäèòå òðåòüå ÷èñëî: ";
+    std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚Ñ€ÐµÑ‚ÑŒÐµ Ñ‡Ð¸ÑÐ»Ð¾: ";
     std::cin >> thirdNum;
 
     int temp{};
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
         secondNum = temp;
     }
 
-     std::cout << "Ðåçóëüòàò: " << firstNum << " " << secondNum << " " << thirdNum << std::endl;
+     std::cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << firstNum << " " << secondNum << " " << thirdNum << std::endl;
 
     return 0;
 }
