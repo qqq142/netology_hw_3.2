@@ -1,0 +1,46 @@
+#include <QCoreApplication>
+#include <iostream>
+#include <Windows.h>
+
+int main(int argc, char *argv[])
+{
+    QCoreApplication a(argc, argv);
+
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    int firstNum{}, secondNum{}, thirdNum{};
+
+    std::cout << "¬ведите первое число: ";
+    std::cin >> firstNum;
+
+    std::cout << "¬ведите второе число: ";
+    std::cin >> secondNum;
+
+    std::cout << "¬ведите третье число: ";
+    std::cin >> thirdNum;
+
+    int temp{};
+
+    if (firstNum < secondNum) {
+        temp = firstNum;
+        firstNum = secondNum;
+        secondNum = temp;
+    }
+
+    if (secondNum < thirdNum) {
+        temp = secondNum;
+        secondNum = thirdNum;
+        thirdNum = temp;
+    }
+
+    if (firstNum < secondNum) {
+        temp = firstNum;
+        firstNum = secondNum;
+        secondNum = temp;
+    }
+
+     std::cout << "–езультат: " << firstNum << " " << secondNum << " " << thirdNum << std::endl;
+
+    return 0;
+}
